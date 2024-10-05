@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Price</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Product Price</h1>
+    <p><strong>Product Name:</strong> {{ product_name }}</p>
+    <p><strong>Price:</strong> ₹{{ price }}</p>
+    <p><strong>Previous Price:</strong> ₹{{ previous_price }}</p>
+    <p><strong>Lowest Price:</strong> ₹{{ lowest_price }}</p>
+    <p><strong>Highest Price:</strong> ₹{{ highest_price }}</p>
+    <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>

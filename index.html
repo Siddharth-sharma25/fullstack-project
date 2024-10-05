@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Price Tracker</h1>
+    <form action="/get_price" method="post">
+        <input type="text" name="product_url" placeholder="Product URL" required>
+        <input type="text" name="platform" placeholder="Platform (e.g., amazon, flipkart)" required>
+        <button type="submit">Get Price</button>
+    </form>
+</body>
+</html>
